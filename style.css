@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+body {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-image: url("https://wallpapers.com/images/featured/universe-qs811igzbabl1m0o.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  animation: color-animation 4s linear infinite;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.page-logo {
+  height: 40px;
+  width: auto;
+}
+
+.page-logo:hover {
+  animation: tilt-shaking 0.15s infinite;
+}
+
+img {
+  height: 240px;
+  width: 180px;
+  margin: 20px;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+section {
+  display: inline-block;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+}
+
+figcaption:hover {
+  color: #6960e6;
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.form-wrapper input {
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+  border-color: #191970;
+}
+
+.form-wrapper button {
+  margin-top: 12px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  background: #9a80cf;
+  font-size: 1em;
+  color: white;
+}
+
+.form-wrapper button:hover {
+  background-color: #b3b0de;
+  color: black;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes color-animation {
+  0% {
+    color: #ffffff;
+  }
+  35% {
+    color: #f3b9bb;
+  }
+  55% {
+    color: #b5d9fa;
+  }
+  75% {
+    color: #a784c2;
+  }
+  100% {
+    color: #eddea4;
+  }
+}
